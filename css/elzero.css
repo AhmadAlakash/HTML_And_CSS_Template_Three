@@ -698,6 +698,44 @@ section.gallery .container .box .image:hover img {
 
 /*end testimonials*/
 
+/*start team-members*/
+.team-members {
+  padding-top: var(--main-padding-top-bottom);
+  padding-bottom: var(--main-padding-top-bottom);
+  position: relative;
+}
+.team-members .container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 30px;
+}
+.team-members .container .box {
+  position: relative;
+}
+.team-members .container .box::before {
+  content: "";
+  width: calc(100% - 60px);
+  height: 100%;
+  z-index: -2;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: #f3f3f3;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+.team-members .container .box .data {
+}
+.team-members .container .box .data img {
+  width: 100%;
+}
+.team-members .container .box .info {
+}
+/*end team-members*/
+
 /*start anmation*/
 /*start anmation*/
 /*start anmation*/

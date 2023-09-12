@@ -59,6 +59,7 @@ ul {
   text-transform: uppercase;
   width: fit-content;
   position: relative;
+  letter-spacing: 3px;
   z-index: 1;
   transition: var(--main-transition);
   -webkit-transition: var(--main-transition);
@@ -813,6 +814,36 @@ section.gallery .container .box .image:hover img {
   color: #777;
 }
 /*end team-members*/
+
+/*start services*/
+.services {
+  padding-top: var(--main-padding-top-bottom);
+  padding-bottom: var(--main-padding-top-bottom);
+  position: relative;
+  background-color: var(--section-background-color);
+}
+
+.services .container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 40px;
+}
+.services .container .box {
+  background-color: white;
+  box-shadow: 0 12px 20px 0 rgb(0 0 0 / 13%), 0 2px 4px 0 rgb(0 0 0 / 12%);
+  counter-increment: services;
+  transition: var(--main-transition);
+  -webkit-transition: var(--main-transition);
+  -moz-transition: var(--main-transition);
+  -ms-transition: var(--main-transition);
+  -o-transition: var(--main-transition);
+  position: relative;
+}
+.services .container .box i {
+}
+.services .container .box .info {
+}
+/*end services*/
 
 /*start anmation*/
 /*start anmation*/

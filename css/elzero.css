@@ -1246,6 +1246,7 @@ section.gallery .container .box .image:hover img {
   position: relative;
   box-shadow: 0 12px 20px 0 rgb(0 0 0 / 13%), 0 2px 4px 0 rgb(0 0 0 / 12%);
   z-index: 1;
+  padding: 5px;
   text-align: center;
   background-color: white;
   transition: var(--main-transition);
@@ -1281,15 +1282,99 @@ section.gallery .container .box .image:hover img {
 .pricing .container .box:hover::before {
   width: 100%;
 }
+@media (min-width: 1200px) {
+  .pricing .container .box.populor {
+    top: -20px;
+  }
+}
+.pricing .container .box.populor .label {
+  position: absolute;
+  writing-mode: vertical-rl;
+  -webkit-writing-mode: vertical-rl;
+  -ms-writing-mode: vertical-rl;
+  background-color: var(--main-color);
+  color: white;
+  font-weight: bold;
+  padding: 10px 10px 35px 10px;
+  font-size: 18px;
+  right: 20px;
+  width: 40px;
+  line-height: 1.2;
+}
+.pricing .container .box.populor .label::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  border-style: solid;
+  border-color: transparent transparent white transparent;
+  border-width: 20px;
+}
+
 .pricing .container .box .title {
+  font-weight: bold;
+  margin: 30px 0;
+  font-size: 25px;
+  letter-spacing: -1px;
 }
 .pricing .container .box img {
+  width: 80px;
+  margin-bottom: 30px;
 }
 .pricing .container .box .price {
+  margin-bottom: 20px;
 }
 .pricing .container .box .amount {
+  display: block;
+  font-size: 60px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: var(--main-color);
 }
 .pricing .container .box .time {
+  color: #777;
+}
+.pricing .container .box ul {
+  text-align: left;
+}
+.pricing .container .box ul li {
+  position: relative;
+  padding: 20px;
+  border-top: 1px solid #eee;
+}
+.pricing .container .box ul li::before {
+  font-family: "Font Awesome 5 Free";
+  content: "\f00c";
+
+  margin-right: 10px;
+  font-weight: 900;
+  color: var(--main-color);
+}
+.pricing .container .box a {
+  display: block;
+  width: fit-content;
+  font-weight: bold;
+  padding: 15px 20px;
+  color: var(--main-color);
+  background-color: white;
+  margin: 30px auto 40px;
+  border: 2px solid var(--main-color);
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+  transition: var(--main-transition);
+  -webkit-transition: var(--main-transition);
+  -moz-transition: var(--main-transition);
+  -ms-transition: var(--main-transition);
+  -o-transition: var(--main-transition);
+}
+
+.pricing .container .box a:hover {
+  background-color: var(--main-color-alt);
+  border-color: var(--main-color-alt);
+  color: white;
 }
 
 /*start pricing*/

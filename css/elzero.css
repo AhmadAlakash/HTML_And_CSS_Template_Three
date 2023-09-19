@@ -1230,6 +1230,70 @@ section.gallery .container .box .image:hover img {
 }
 /*end events*/
 
+/*start pricing*/
+.pricing {
+  padding-top: var(--main-padding-top-bottom);
+  padding-bottom: var(--main-padding-top-bottom);
+  position: relative;
+  background-color: var(--section-background-color);
+}
+.pricing .container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 30px;
+}
+.pricing .container .box {
+  position: relative;
+  box-shadow: 0 12px 20px 0 rgb(0 0 0 / 13%), 0 2px 4px 0 rgb(0 0 0 / 12%);
+  z-index: 1;
+  text-align: center;
+  background-color: white;
+  transition: var(--main-transition);
+  -webkit-transition: var(--main-transition);
+  -moz-transition: var(--main-transition);
+  -ms-transition: var(--main-transition);
+  -o-transition: var(--main-transition);
+}
+
+.pricing .container .box::before,
+.pricing .container .box::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 50%;
+  background-color: #f6f6f6;
+  z-index: -1;
+  transition: var(--main-transition);
+  -webkit-transition: var(--main-transition);
+  -moz-transition: var(--main-transition);
+  -ms-transition: var(--main-transition);
+  -o-transition: var(--main-transition);
+}
+.pricing .container .box::before {
+  left: 0;
+  top: 0;
+}
+.pricing .container .box::after {
+  right: 0;
+  bottom: 0;
+}
+.pricing .container .box:hover::after,
+.pricing .container .box:hover::before {
+  width: 100%;
+}
+.pricing .container .box .title {
+}
+.pricing .container .box img {
+}
+.pricing .container .box .price {
+}
+.pricing .container .box .amount {
+}
+.pricing .container .box .time {
+}
+
+/*start pricing*/
+
 /*start anmation*/
 /*start anmation*/
 /*start anmation*/

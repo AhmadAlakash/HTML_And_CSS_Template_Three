@@ -1377,7 +1377,22 @@ section.gallery .container .box .image:hover img {
   color: white;
 }
 
-/*start pricing*/
+/*end pricing*/
+
+/*start videos*/
+.videos {
+  padding-top: var(--main-padding-top-bottom);
+  padding-bottom: var(--main-padding-top-bottom);
+  position: relative;
+}
+.videos .container {
+}
+.videos .container .holder {
+}
+.videos .container .holder {
+}
+
+/*end videos*/
 
 /*start anmation*/
 /*start anmation*/

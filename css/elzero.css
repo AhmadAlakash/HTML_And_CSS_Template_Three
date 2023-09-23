@@ -1601,6 +1601,11 @@ section.gallery .container .box .image:hover img {
     flex-basis: 100%;
   }
 }
+@media (max-width: 767px) {
+  .discount .form {
+    margin-bottom: 30px;
+  }
+}
 .discount .form .input {
   display: block;
   width: 100%;
@@ -1665,6 +1670,11 @@ footer {
   padding-top: var(--main-padding-top-bottom);
   padding-bottom: var(--main-padding-top-bottom);
 }
+@media (max-width: 767px) {
+  footer {
+    text-align: center;
+  }
+}
 footer .container {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
@@ -1681,6 +1691,12 @@ footer .container .box h3 {
 footer .container .box .social {
   display: flex;
 }
+@media (max-width: 767px) {
+  footer .container .box .social {
+    justify-content: center;
+  }
+}
+
 footer .container .box .social li {
   margin-right: 10px;
 }
@@ -1750,6 +1766,14 @@ footer .container .box .line {
   align-items: center;
   color: #b9b9b9;
   margin-bottom: 30px;
+}
+@media (max-width: 767px) {
+  footer .container .box .line {
+    flex-direction: column;
+  }
+  footer .container .box .line i {
+    margin-bottom: 10px;
+  }
 }
 footer .container .box .line i {
   font-size: 25px;
